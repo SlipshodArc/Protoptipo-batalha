@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1718595377 source:c:\projeto_c\jogos\prototipo batalha\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<locale.h>
+	"globais_funcoes.h"
+
+1718594976 c:\projeto_c\jogos\prototipo batalha\globais_funcoes.h
+
+1718136013 source:c:\projeto_c\jogos\prototipo batalha\funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"globais_funcoes.h"
+
+1718305250 source:c:\projeto_c\jogos\prototipo batalha\batalha.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"globais_funcoes.h"
+
+1718595964 source:c:\projeto_c\jogos\prototipo batalha\batalha_funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"globais_funcoes.h"
+
