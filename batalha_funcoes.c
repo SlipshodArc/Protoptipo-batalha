@@ -34,11 +34,11 @@ void tela(){
     printf("          >\\             ");
     printf("  Mana: %d \t\t\t\t\t      Mana: %d ",pers.bE, enemy.bE);
     printf("\n\t\t\t ");
-    printf("  PoÁ„o: %d \t\t\t\t\t      PoÁ„o: %d ",pers.pocao, enemy.pocao);
+    printf("  Po√ß√£o: %d \t\t\t\t\t      Po√ß√£o: %d ",pers.pocao, enemy.pocao);
     printf("\n\t\t\t ");
-    printf("  PoÁ„o Tanque: %d \t\t\t\t      PoÁ„o Tanque: %d ",pers.bufferVida, enemy.bufferVida);
+    printf("  Po√ß√£o Tanque: %d \t\t\t\t      Po√ß√£o Tanque: %d ",pers.bufferVida, enemy.bufferVida);
     printf("\n\t\t\t ");
-    printf("  PoÁ„o ForÁa: %d \t\t\t\t      PoÁ„o ForÁa: %d ",pers.bufferAtq, enemy.bufferVida);
+    printf("  Po√ß√£o For√ßa: %d \t\t\t\t      Po√ß√£o For√ßa: %d ",pers.bufferAtq, enemy.bufferVida);
 
 }
 
@@ -148,7 +148,7 @@ void persVez(){
     printf("\t\t\t\t\t\t       Sua vez   \n");
     printf("\t\t\t\t\t\t>------------------<\n\n");
 
-    printf("\t\t--> Escolha sua aÁ„o\n\n");
+    printf("\t\t--> Escolha sua a√ß√£o\n\n");
     printf("\t\t    > Atacar    [1]\n");
     printf("\t\t    > Usar item [2]\n\n");
     printf("\t\t       -> ");
@@ -238,16 +238,16 @@ void persVez(){
         while(voltar){
             printf("\n\n\n");
             printf("\t\t--> Escolha um item: \n\n");
-            printf("\t\t    > PoÁ„o de cura  [1]\n");
-            printf("\t\t    > PoÁ„o Tanque   [2] \n");
-            printf("\t\t    > PoÁ„o ForÁa    [3]\n");
+            printf("\t\t    > Po√ß√£o de cura  [1]\n");
+            printf("\t\t    > Po√ß√£o Tanque   [2] \n");
+            printf("\t\t    > Po√ß√£o For√ßa    [3]\n");
             printf("\t\t    > Escudo         [4]\n\n");
             printf("\t\t       -> ");
             scanf("%d",&acaoInv);
             if(acaoInv == 1){
-                if(pers.vida == pers.vidaMax){
+                if(pers.vida >= pers.vidaMax){
                     system("cls");
-                    printf("\n\n\nJa est· com vida m·xima!\n\n\n");
+                    printf("\n\n\nJa est√° com vida m√°xima!\n\n\n");
                     printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -255,7 +255,7 @@ void persVez(){
                 }
                 if(pers.pocao>0){
                     system("cls");
-                    printf("\n\nVocÍ se sente revigorado!!!\n\n");
+                    printf("\n\nVoc√™ se sente revigorado!!!\n\n");
                     printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -268,7 +268,7 @@ void persVez(){
                     }
                 }
                 else{
-                    printf("\n\nVocÍ n„o tem poÁ„o de vida! ");
+                    printf("\n\nVoc√™ n√£o tem po√ß√£o de vida! ");
                     printf("\n\nAperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -281,12 +281,12 @@ void persVez(){
                     pers.bufferVida--;
                     pers.vida = pers.vida + (pers.vidaMax/2);
                     system("cls");
-                    printf("\n\nVocÍ se sente mais forte!\n\n");
+                    printf("\n\nVoc√™ se sente mais forte!\n\n");
                     printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
                 } else {
-                    printf("\n\nVocÍ n„o tem poÁ„o Tanque!!\n\n");
+                    printf("\n\nVoc√™ n√£o tem po√ß√£o Tanque!!\n\n");
                     printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -300,13 +300,13 @@ void persVez(){
                     pers.bufferAtq--;
                     pers.buffer = pers.pAtq;
                     system("cls");
-                    printf("\n\nVocÍ sente que seu prÛximo ataque ser· poderoso!!!\n\n");
+                    printf("\n\nVoc√™ sente que seu pr√≥ximo ataque ser√° poderoso!!!\n\n");
                     printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
                 } else {
 
-                    printf("\n\nVocÍ n„o tem poÁ„o de ForÁa!\n\n");
+                    printf("\n\nVoc√™ n√£o tem po√ß√£o de For√ßa!\n\n");
                     printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -316,7 +316,7 @@ void persVez(){
 
             if(acaoInv == 4){
                 voltar = 0;
-                printf("\n\nVocÍ decide se proteger!\n\n");
+                printf("\n\nVoc√™ decide se proteger!\n\n");
                 printf("Aperte ENTER para continuar");
                 c = getchar();
                 c = getchar();
@@ -327,8 +327,8 @@ void persVez(){
             if(acaoInv > 4){
                 system("cls");
                 voltar = 0;
-                printf("\n\nOh, n„o! Ele foi mais r·pido!");
-                printf("\n\nVocÍ perdeu a vez!\n\n");
+                printf("\n\nOh, n√£o! Ele foi mais r√°pido!");
+                printf("\n\nVoc√™ perdeu a vez!\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -369,7 +369,7 @@ void enemyVez(){
     printf("\t\t\t\t\t       Vez do %s   \n", enemy.nome);
     printf("\t\t\t\t\t      >---------------------------<\n\n");
 
-    printf("\t\t--> Escolha sua aÁ„o\n\n");
+    printf("\t\t--> Escolha sua a√ß√£o\n\n");
     printf("\t\t    > Atacar    [1]\n");
     printf("\t\t    > Usar item [2]\n\n");
     printf("\t\t       -> ");
@@ -489,9 +489,9 @@ if(acao ==2){
         while(voltar){
             printf("\n\n\n");
             printf("\t\t--> Escolha um item: \n\n");
-            printf("\t\t    > PoÁ„o de cura  [1]\n");
-            printf("\t\t    > PoÁ„o Tanque   [2] \n");
-            printf("\t\t    > PoÁ„o ForÁa    [3]\n");
+            printf("\t\t    > Po√ß√£o de cura  [1]\n");
+            printf("\t\t    > Po√ß√£o Tanque   [2] \n");
+            printf("\t\t    > Po√ß√£o For√ßa    [3]\n");
             printf("\t\t    > Escudo         [4]\n\n");
             printf("\t\t       -> ");
 
@@ -507,7 +507,7 @@ if(acao ==2){
             } else
                 acaoInv = 4;
 
-                //Tirar casos em que ele n„o tem poÁıes especÌficas.
+                //Tirar casos em que ele n√£o tem po√ß√µes espec√≠ficas.
             if(acaoInv == 1 && enemy.vida >= enemy.vidaMax || acaoInv == 1 && enemy.pocao == 0 ){
                 acaoInv = 2;
             }
@@ -524,7 +524,7 @@ if(acao ==2){
             if(acaoInv == 1){
                 if(enemy.pocao>0){
                     system("cls");
-                    printf("\n\nSeu advers·rio parece se sentir revigorado!");
+                    printf("\n\nSeu advers√°rio parece se sentir revigorado!");
                     _sleep(2000);
                     voltar = 0;
                     enemy.pocao--;
@@ -536,7 +536,7 @@ if(acao ==2){
         }
             if(acaoInv == 2){
                 system("cls");
-                printf("\n\nSeu advers·rio parece estar maior!!");
+                printf("\n\nSeu advers√°rio parece estar maior!!");
                 _sleep(2000);
                 enemy.bufferVida--;
                 enemy.vida = enemy.vida + (enemy.vidaMax/2);
@@ -545,7 +545,7 @@ if(acao ==2){
 
             if(acaoInv == 3){
                     system("cls");
-                    printf("\n\nSeu advers·rio parece estar se preparando para um ataque poderoso!!");
+                    printf("\n\nSeu advers√°rio parece estar se preparando para um ataque poderoso!!");
                     _sleep(2000);
                 enemy.bufferAtq--;
                 enemy.buffer = enemy.pAtq;
@@ -554,7 +554,7 @@ if(acao ==2){
 
             if(acaoInv == 4){
                     system("cls");
-                    printf("\n\nSeu advers·rio est· se protegendo!!");
+                    printf("\n\nSeu advers√°rio est√° se protegendo!!");
                     _sleep(2000);
                 enemy.guard = enemy.defesa;
                 voltar = 0;
@@ -609,7 +609,7 @@ int poderzinho(tipo1){
             printf("\n\n\n");
             printf("\t\t--> Escolha uma habilidade do tipo Chama: \n\n");
             printf("\t\t    > Bola de Fogo         [1] (15 Especial)\n");
-            printf("\t\t    > Rajada Incendi·ria   [2] (60 Especial) \n");
+            printf("\t\t    > Rajada Incendi√°ria   [2] (60 Especial) \n");
             printf("\t\t    > Voltar               [3]\n");
             printf("\t\t       -> ");
 
@@ -629,7 +629,7 @@ int poderzinho(tipo1){
 
             } else {
 
-                printf("\n\nVocÍ n„o tem Mana o suficiente.\n\n");
+                printf("\n\nVoc√™ n√£o tem Mana o suficiente.\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -643,13 +643,13 @@ int poderzinho(tipo1){
                 pers.bE = pers.bE - 60;
                 voltar = 0;
                 system("cls");
-                printf("\n\nA temperatura est· aumentando, vocÍ se sente ardente\n\n");
+                printf("\n\nA temperatura est√° aumentando, voc√™ se sente ardente\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
 
             } else {
-                printf("\n\nVocÍ n„o tem Mana o suficiente.\n\n");
+                printf("\n\nVoc√™ n√£o tem Mana o suficiente.\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -667,8 +667,8 @@ int poderzinho(tipo1){
 
             printf("\n\n\n");
             printf("\t\t--> Escolha uma habilidade do tipo Cinzas: \n\n");
-            printf("\t\t    > DecadÍncia           [1] (15 Especial)\n");
-            printf("\t\t    > Fim Inevit·vel       [2] (60 Especial) \n");
+            printf("\t\t    > Decad√™ncia           [1] (15 Especial)\n");
+            printf("\t\t    > Fim Inevit√°vel       [2] (60 Especial) \n");
             printf("\t\t    > Voltar               [3]\n");
             printf("\t\t       -> ");
 
@@ -680,13 +680,13 @@ int poderzinho(tipo1){
                 voltar = 0;
                 pers.bE = pers.bE - 15;
                 system("cls");
-                printf("\n\nO cheiro de podrid„o toma conta do ambiente\n\n");
+                printf("\n\nO cheiro de podrid√£o toma conta do ambiente\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
             } else {
 
-                printf("\n\nVocÍ n„o tem Mana o suficiente.\n\n");
+                printf("\n\nVoc√™ n√£o tem Mana o suficiente.\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -700,13 +700,13 @@ int poderzinho(tipo1){
                 pers.bE = pers.bE - 60;
                 voltar = 0;
                 system("cls");
-                printf("\n\nO Cen·rio se distorce com tamanho poder, nem a sombras pode escapar do fim\n\n");
+                printf("\n\nO Cen√°rio se distorce com tamanho poder, nem a sombras pode escapar do fim\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
 
             } else {
-                printf("\n\nVocÍ n„o tem Mana o suficiente.\n\n");
+                printf("\n\nVoc√™ n√£o tem Mana o suficiente.\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -737,13 +737,13 @@ int poderzinho(tipo1){
                 voltar = 0;
                 pers.bE = pers.bE - 15;
                 system("cls");
-                printf("\n\nA luz queima todos que buscam a destruiÁ„o\n\n");
+                printf("\n\nA luz queima todos que buscam a destrui√ß√£o\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
             } else {
 
-                printf("\n\nVocÍ n„o tem Mana o suficiente.\n\n");
+                printf("\n\nVoc√™ n√£o tem Mana o suficiente.\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -757,13 +757,13 @@ int poderzinho(tipo1){
                 pers.bE = pers.bE - 60;
                 voltar = 0;
                 system("cls");
-                printf("\n\nOs Deuses lhe deram as benÁ„os para isso, n„o faÁa eles se arrependerem\n\n");
+                printf("\n\nOs Deuses lhe deram as ben√ß√£os para isso, n√£o fa√ßa eles se arrependerem\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
 
             } else {
-                printf("\n\nVocÍ n„o tem Mana o suficiente.\n\n");
+                printf("\n\nVoc√™ n√£o tem Mana o suficiente.\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -794,13 +794,13 @@ int poderzinho(tipo1){
                 voltar = 0;
                 pers.bE = pers.bE - 15;
                 system("cls");
-                printf("\n\nAs sombras se mexem, quase como se tivessem vida prÛrpia\n\n");
+                printf("\n\nAs sombras se mexem, quase como se tivessem vida pr√≥rpia\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
             } else {
 
-                printf("\n\nVocÍ n„o tem Mana o suficiente.\n\n");
+                printf("\n\nVoc√™ n√£o tem Mana o suficiente.\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -820,7 +820,7 @@ int poderzinho(tipo1){
                     c = getchar();
 
             } else {
-                printf("\n\nVocÍ n„o tem Mana o suficiente.\n\n");
+                printf("\n\nVoc√™ n√£o tem Mana o suficiente.\n\n");
                 printf("Aperte ENTER para continuar");
                     c = getchar();
                     c = getchar();
@@ -851,7 +851,7 @@ int poderzinhoBot(tipo1){
             printf("\n\n\n");
             printf("\t\t--> Escolha uma habilidade do tipo Chama: \n\n");
             printf("\t\t    > Bola de Fogo         [1] (15 Especial)\n");
-            printf("\t\t    > Rajada Incendi·ria   [2] (60 Especial) \n");
+            printf("\t\t    > Rajada Incendi√°ria   [2] (60 Especial) \n");
             printf("\t\t    > Voltar               [3]\n");
             printf("\t\t       -> ");
 
@@ -873,7 +873,7 @@ int poderzinhoBot(tipo1){
                 enemy.bE = enemy.bE - 60;
                 voltar = 0;
                 system("cls");
-                printf("\n\nA temperatura est· aumentando, vocÍ sente seu corpo queimar\n\n");
+                printf("\n\nA temperatura est√° aumentando, voc√™ sente seu corpo queimar\n\n");
                 _sleep(2000);
 
                 }
@@ -883,8 +883,8 @@ int poderzinhoBot(tipo1){
 
             printf("\n\n\n");
             printf("\t\t--> Escolha uma habilidade do tipo Cinzas: \n\n");
-            printf("\t\t    > DecadÍncia           [1] (15 Especial)\n");
-            printf("\t\t    > Fim Inevit·vel       [2] (60 Especial) \n");
+            printf("\t\t    > Decad√™ncia           [1] (15 Especial)\n");
+            printf("\t\t    > Fim Inevit√°vel       [2] (60 Especial) \n");
             printf("\t\t    > Voltar               [3]\n");
             printf("\t\t       -> ");
 
@@ -897,7 +897,7 @@ int poderzinhoBot(tipo1){
                 voltar = 0;
                 enemy.bE = enemy.bE - 15;
                 system("cls");
-                printf("\n\nO cheiro de podrid„o toma conta do ambiente\n\n");
+                printf("\n\nO cheiro de podrid√£o toma conta do ambiente\n\n");
             _sleep(2000);
 
             } else {
@@ -908,7 +908,7 @@ int poderzinhoBot(tipo1){
                 enemy.bE = enemy.bE - 60;
                 voltar = 0;
                 system("cls");
-                printf("\n\nO Cen·rio se distorce com tamanho poder, nem as sombras podem escapar do fim\n\n");
+                printf("\n\nO Cen√°rio se distorce com tamanho poder, nem as sombras podem escapar do fim\n\n");
             _sleep(2000);
             }
 
@@ -932,7 +932,7 @@ int poderzinhoBot(tipo1){
                 voltar = 0;
                 enemy.bE = enemy.bE - 15;
                 system("cls");
-                printf("\n\nA luz queima todos que buscam a destruiÁ„o\n\n");
+                printf("\n\nA luz queima todos que buscam a destrui√ß√£o\n\n");
             _sleep(2000);
             } else {
 
@@ -942,7 +942,7 @@ int poderzinhoBot(tipo1){
                 enemy.bE = enemy.bE - 60;
                 voltar = 0;
                 system("cls");
-                printf("\n\nOs Deuses desaprovam a criatura, mas eles n„o se arrependem\n\n");
+                printf("\n\nOs Deuses desaprovam a criatura, mas eles n√£o se arrependem\n\n");
             _sleep(2000);
 
         }
@@ -965,7 +965,7 @@ int poderzinhoBot(tipo1){
                 voltar = 0;
                 enemy.bE = enemy.bE - 15;
                 system("cls");
-                printf("\n\nAs sombras se mexem, quase como se tivessem vida prÛrpia\n\n");
+                printf("\n\nAs sombras se mexem, quase como se tivessem vida pr√≥rpia\n\n");
             _sleep(2000);
             } else {
 
