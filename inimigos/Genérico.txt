@@ -1,0 +1,9 @@
+Nome da criatura
+Vida da criatura
+Poder de Ataque
+Tipo da Criatura
+Quantidade de poções de cura
+Vida máxima
+Defesa
+bufferVida
+bufferAtq

@@ -1,4 +1,9 @@
-Slime de Chamas Nv1
+Slime de Chamas Nv.1
 100
 10
+1
+2
+100
+5
+2
 1

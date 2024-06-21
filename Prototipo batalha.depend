@@ -5,10 +5,19 @@
 	<time.h>
 	<locale.h>
 	"globais_funcoes.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<locale.h>
+	"globais_funcoes.h"
 
 1718594976 c:\projeto_c\jogos\prototipo batalha\globais_funcoes.h
 
 1718136013 source:c:\projeto_c\jogos\prototipo batalha\funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"globais_funcoes.h"
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -20,11 +29,64 @@
 	<time.h>
 	<string.h>
 	"globais_funcoes.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"globais_funcoes.h"
 
 1718595964 source:c:\projeto_c\jogos\prototipo batalha\batalha_funcoes.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<string.h>
+	"globais_funcoes.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"globais_funcoes.h"
+
+1718930978 source:c:\users\user\desktop\faculdade\fire tale\protoptipo-batalha\batalha.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"globais_funcoes.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"globais_funcoes.h"
+
+1718944307 c:\users\user\desktop\faculdade\fire tale\protoptipo-batalha\globais_funcoes.h
+
+1718989452 source:c:\users\user\desktop\faculdade\fire tale\protoptipo-batalha\batalha_funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"globais_funcoes.h"
+
+1718916936 source:c:\users\user\desktop\faculdade\fire tale\protoptipo-batalha\funcoes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"globais_funcoes.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"globais_funcoes.h"
+
+1718937603 source:c:\users\user\desktop\faculdade\fire tale\protoptipo-batalha\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<locale.h>
+	"globais_funcoes.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<locale.h>
 	"globais_funcoes.h"
 

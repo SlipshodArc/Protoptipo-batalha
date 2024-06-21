@@ -7,6 +7,7 @@
 
 void batalha(int x){
     int continuar=1, vez;
+    int vencedor;  // 1 para o jogador, 0 para o inimigo.
 
     //resetar a barra de especial
     pers.bE = 0;
@@ -19,7 +20,6 @@ void batalha(int x){
     opc();
 
     //escolher quem vai começar 1-personagem / 2- inimigo
-    /*
     vez = dado();
     if(vez >6){
         vez = 1;
@@ -27,8 +27,6 @@ void batalha(int x){
     else{
         vez = 2;
     }
-    */
-    vez = 1;
 
     //looping de batalha
     while(continuar){
@@ -38,8 +36,9 @@ void batalha(int x){
         if(vez==2)
             enemyVez();
 
-        //vez = trocaVez();
+        vez = trocaVez(vez);
         printf("\n\n\n\n\n\n\n\n");
+        continuar = fim(&vencedor);
     }
 
 

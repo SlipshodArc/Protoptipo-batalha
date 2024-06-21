@@ -7,6 +7,10 @@
         int tipo;
         int pocao;
         int chamas, luz, cinzas, sombras; //armazenar se tem ou nao o tipo
+        int defesa;
+        int bufferVida, bufferAtq;
+        int buffer;
+        int guard;
         /*
         1 - chamas
         2 - cinzas
@@ -21,6 +25,11 @@
         char nome[100];
         int vida, pAtq, bE;
         int tipo;
+        int pocao;
+        int vidaMax;
+        int defesa;
+        int bufferVida, bufferAtq, buffer;
+        int guard;
     }Enemy;
 
     Enemy enemy;
@@ -34,6 +43,9 @@
     int trocaVez(int vez);
     void persVez();
     void enemyVez();
-
+    int fim(int *vencedor);
+    int critico();
+    int poderzinho(tipo1);
+    int poderzinhoBot(tipo1);
 
 #endif // GLOBAIS_FUNCOES_H_INCLUDED

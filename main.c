@@ -18,7 +18,12 @@ int main(){
     pers.cinzas = 1;
     pers.vidaMax = 100;
     pers.pocao = 3;
-    strcpy(pers.nome, "SlipshodArc");
+    strcpy(pers.nome, "IsabelleAnc");
+    pers.defesa = 10;
+    pers.bufferAtq = 2;
+    pers.bufferVida = 3;
+    pers.buffer = 0;
+    pers.guard = 0;
 
 
 
